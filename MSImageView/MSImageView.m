@@ -28,9 +28,13 @@
     dispatch_queue_t loadImageQueue = dispatch_queue_create([[url absoluteString] cStringUsingEncoding:NSUTF8StringEncoding], NULL);
     
     dispatch_async(loadImageQueue, ^(void){
+        NSLog(@"Started loading from URL: %@", [url absoluteString]);
+        
         //carrega imagem da url
         NSData *imageData = [NSData dataWithContentsOfURL:url];
         UIImage *image = [UIImage imageWithData:imageData];
+        
+        NSLog(@"Finished loading from URL: %@", [url absoluteString]);
         
         if(!strcmp(dispatch_queue_get_label(loadImageQueue), [_actualThreadLabelString cStringUsingEncoding:NSUTF8StringEncoding])) {
             //Atualiza imagem na main thread

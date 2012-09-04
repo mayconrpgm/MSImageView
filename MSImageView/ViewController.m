@@ -40,7 +40,7 @@
             
             break;
         case 2:
-            [_imageView loadImageFromURL:[NSURL URLWithString:@"http://1.bp.blogspot.com/-6FVbugJwJGY/Tu1h7N2uHoI/AAAAAAAACC0/f45RLass81g/s1600/imagens%2Be%2Bsignificados.jpg"] animated:YES placeholderImage:[UIImage imageNamed:@"placeholder.gif"]];
+            [_imageView loadImageFromURL:[NSURL URLWithString:@"http://www.letsgodigital.org/images/artikelen/35/d90-test-photo.jpg"] animated:YES placeholderImage:[UIImage imageNamed:@"placeholder.gif"]];
             break;
         case 3:
             [_imageView loadImageFromURL:[NSURL URLWithString:@"http://www.apolo11.com/imagens/2010/cometa_hartley_2_missao_epoxy.jpg"] animated:YES placeholderImage:[UIImage imageNamed:@"placeholder.gif"]];
